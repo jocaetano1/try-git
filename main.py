@@ -1,4 +1,9 @@
+# -*- coding: utf8 -*-
+
 import random
 
-x_1 = random.randint(0,100)
-print(x_1)
+
+def gerar_numero_qualquer(inicio: int = 0, fim: int = 10):
+    """Gerar um valor númerico aleatório."""
+    numero_qualquer = random.randint(a=inicio, b=fim)
+    return numero_qualquer
