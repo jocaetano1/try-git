@@ -1,9 +1,13 @@
 # -*- coding: utf8 -*-
 
-import random
+from random import randint
 
 
-def gerar_numero_qualquer(inicio: int = 0, fim: int = 10):
+def gerar_numero_qualquer(inicio: int = 0, fim: int = 10) -> int:
     """Gerar um valor númerico aleatório."""
-    numero_qualquer = random.randint(a=inicio, b=fim)
-    return numero_qualquer
+    random_number: int = randint(a=inicio, b=fim)
+    return random_number
+
+
+number: int = gerar_numero_qualquer()
+print(number)
